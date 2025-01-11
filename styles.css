@@ -1,0 +1,25 @@
+body {
+    background-image: url('kopi.jpg'); /* Ganti dengan nama file gambar Anda */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white; /* Mengubah warna teks agar kontras dengan latar belakang */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.product {
+    margin: 20px;
+}

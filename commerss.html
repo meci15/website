@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Online</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS -->
+          <style>
+    body {
+      background-color: #593722; /* Warna coklat */
+      color: #fff; /* Warna teks putih */
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>L'amour Cafe</h1>
+        <img src="logo.png" alt="Logo Qui">
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Selamat Datang di Coffee Shop Kami!</h2>
+        <p>Temukan berbagai jenis kopi terbaik dan nikmati pengalaman berbelanja yang menyenangkan.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Menu Kami</h2>
+        <div class="product">
+            <h3>Kopi Arabika</h3>
+            <p>Harga: Rp 30.000</p>
+            <button onclick="order('Kopi Arabika')">Pesan Sekarang</button>
+        </div>
+        <div class="product">
+            <h3>Kopi Robusta</h3>
+            <p>Harga: Rp 25.000</p>
+            <button onclick="order('Kopi Robusta')">Pesan Sekarang</button>
+        </div>
+        <div class="product">
+            <h3>Kopi Latte</h3>
+            <p>Harga: Rp 35.000</p>
+            <button onclick="order('Kopi Latte')">Pesan Sekarang</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah coffee shop yang berdedikasi untuk menyajikan kopi berkualitas tinggi dengan cita rasa yang unik.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <form action="#" method="post">
+            <label for="name">Nama:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+
+            <input type="submit" value="Kirim Pesan">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Coffee Shop Online. Semua hak dilindungi.</p>
+    </footer>
+
+    <!-- Script JavaScript sederhana untuk pemesanan -->
+    <script>
+        function order(product) {
+            alert("Anda telah memesan: " + product);
+        }
+    </script>
+
+</body>
+</html>
